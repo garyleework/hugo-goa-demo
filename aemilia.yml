@@ -1,0 +1,19 @@
+version: 0.1
+env:
+    variables: []
+build:
+    phases:
+        pre_build:
+            commands: []
+        build:
+            commands:
+                - hugo
+        post_build:
+            commands: []
+    artifacts:
+        files:
+            - '**/*'
+        discardPaths: true
+        baseDirectory: public
+    cache:
+        paths: []
